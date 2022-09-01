@@ -1,0 +1,67 @@
+.container{
+    padding: 10px;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+#page-wrapper {
+    min-height: 800px;
+}
+
+#page-wrapper h1.page-header{
+    margin: 15px 0;
+}
+
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        width: auto;
+        margin: 0 0 0 180px;
+        padding: 0 0px;
+        border-left: 1px solid #a7a5a5;
+    }
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid grey;
+    padding: 5px;
+
+}
+
+.card-header    {
+    font-size: large;
+    font-weight: 600;
+}
+
+
+
+.jumbotron{
+    height: 400px;
+
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+
+.services h5 {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.services p {
+    color: rgb(255, 255, 255);
+    line-height: 60%;
+}
